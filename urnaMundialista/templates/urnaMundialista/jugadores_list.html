@@ -14,18 +14,13 @@
 		 <h3 class="panel-title">{{ p.nombre }} {{ p.apellido }}</h3>
 	 </div>
  <div class="panel-body" name="id_jugador" id="id_jugador">
- 	<a href="{% url 'jugador-detail' p.id_jugador %}" id="id_jugador" name="id_jugador">
+ 	<a href="{% url 'jugadores-detail' p.id_jugador %}" id="id_jugador" name="id_jugador">
  		<img src="{% static p.foto.url %}" style="width:285px;height:250px;"/>
  	</a>
 	 </div>
 </form>
  <div class="panel-footer">
- {% if p.comment %}
- {{ p.comment }}
- {% else %}
- 	<!--<a class="btn btn-success" href="{% url 'votar' %}">VOTAR</a>-->
- {% endif %}
- 		</div>
+ </div>
  	</div>
  </div>
  {% endfor %}

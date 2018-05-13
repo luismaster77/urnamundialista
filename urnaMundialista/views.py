@@ -15,7 +15,7 @@ def base(request):
 def jugador_list(request):
     jugador_list = Jugador.objects.all()
     context = {'object_list': jugador_list}
-    template_name='urnaMundialista/jugador_detail.html'
+    template_name='urnaMundialista/jugadores_detail.html'
     return render(request,'urnaMundialista/jugadores_list.html', context)
 
 class LoginRequiredMixin(object):

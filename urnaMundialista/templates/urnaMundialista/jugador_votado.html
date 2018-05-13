@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %} 
 <form action="" method="post">{% csrf_token %}
-    <p>Desea reservar la pelicula "{{ object.nombre }} {{pbject.apellido}}"?</p>
+    <p>Desea votar por: "{{ object.nombre }} {{ object.apellido }}"?</p>
     <!--<a class='btn btn-danger' href="{% url 'votar' %} ">Confirmar</a>-->
     <a class='btn btn-warning' href="{% url 'jugadores-list' %}">Cancelar</a>
 </form>
