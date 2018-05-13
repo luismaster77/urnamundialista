@@ -148,7 +148,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 STATICFILES_DIRS = (
  os.path.join(BASE_DIR, 'media'),
 ) 
-LOGIN_REDIRECT_URL = '/urnamun/'
+LOGIN_REDIRECT_URL = '/urnamun/jugador/'
 LOGOUT_URL = '/accounts/logout'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
